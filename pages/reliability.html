@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Reliability explained: probability of failure-free operation, failure rate, MTBF/MTTF and the bathtub curve.">
+  <title>Reliability — RAMSysz</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="inner">
+      <a class="brand" href="../index.html">RAM<span>Sysz</span></a>
+      <nav class="site-nav">
+        <a href="reliability.html" aria-current="page">Reliability</a>
+        <a href="availability.html">Availability</a>
+        <a href="maintainability.html">Maintainability</a>
+        <a href="safety.html">Safety</a>
+        <a href="https://www.youtube.com/@RAMSysz" target="_blank" rel="noopener">YouTube ▶</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Reliability — the “R” in RAMS</h1>
+    <p>
+      Reliability answers one question: <em>how long can I trust this system to work
+      without failing?</em> It is the foundation the other RAMS pillars build on.
+    </p>
+
+    <div class="video-wrap">
+      <p>🎬 Video coming soon — paste the YouTube <code>&lt;iframe&gt;</code> here</p>
+    </div>
+
+    <h2>Definition</h2>
+    <div class="callout">
+      <p>
+        <strong>Reliability R(t)</strong> is the probability that an item performs its
+        required function, under stated conditions, for a stated period of time.
+        For a constant failure rate λ:
+        <code>R(t) = e<sup>−λt</sup></code>
+      </p>
+    </div>
+
+    <h2>Key ideas</h2>
+    <ul>
+      <li><strong>Failure rate (λ)</strong> — how often failures occur, typically in failures per hour.</li>
+      <li><strong>MTBF / MTTF</strong> — Mean Time Between Failures (repairable items) and Mean Time To Failure (non-repairable items). For constant λ, MTBF = 1/λ.</li>
+      <li><strong>The bathtub curve</strong> — failure rate over a life cycle: infant mortality, useful life, wear-out.</li>
+      <li><strong>Series vs. parallel systems</strong> — in series, reliabilities multiply (weakest link); redundancy in parallel raises system reliability.</li>
+    </ul>
+
+    <h2>Practical example</h2>
+    <p>
+      A pump has a failure rate of λ = 2 × 10<sup>−5</sup> failures/hour
+      (MTBF = 50 000 h). Over one year of continuous operation (8 760 h):
+      R = e<sup>−0.0000175 × 8760</sup> ≈ e<sup>−0.175</sup> ≈ <strong>0.84</strong> —
+      an 84 % chance of running the whole year without failure.
+    </p>
+
+    <h2>Going further</h2>
+    <ul>
+      <li>Related pages: <a href="availability.html">Availability</a>, <a href="maintainability.html">Maintainability</a></li>
+      <li>References: IEC 60050-192 (dependability vocabulary), MIL-HDBK-217, EN 50126 (railway RAMS)</li>
+    </ul>
+  </main>
+
+  <footer class="site-footer">
+    © RAMSysz — RAMS engineering explained. Built for the
+    <a href="https://www.youtube.com/@RAMSysz" target="_blank" rel="noopener">RAMSysz YouTube channel</a>.
+  </footer>
+
+</body>
+</html>

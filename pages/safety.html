@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Safety explained: hazards and risk, safety integrity levels (SIL), and the standards behind functional safety.">
+  <title>Safety — RAMSysz</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="inner">
+      <a class="brand" href="../index.html">RAM<span>Sysz</span></a>
+      <nav class="site-nav">
+        <a href="reliability.html">Reliability</a>
+        <a href="availability.html">Availability</a>
+        <a href="maintainability.html">Maintainability</a>
+        <a href="safety.html" aria-current="page">Safety</a>
+        <a href="https://www.youtube.com/@RAMSysz" target="_blank" rel="noopener">YouTube ▶</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Safety — the “S” in RAMS</h1>
+    <p>
+      The other three pillars protect the mission; safety protects people.
+      It asks: <em>can this system harm anyone, and is that risk acceptable?</em>
+    </p>
+
+    <div class="video-wrap">
+      <p>🎬 Video coming soon — paste the YouTube <code>&lt;iframe&gt;</code> here</p>
+    </div>
+
+    <h2>Definition</h2>
+    <div class="callout">
+      <p>
+        <strong>Safety</strong> is freedom from unacceptable risk, where
+        <strong>risk = frequency of a hazardous event × severity of its consequences</strong>.
+        Safety engineering identifies hazards, assesses their risk, and reduces it
+        to a tolerable level.
+      </p>
+    </div>
+
+    <h2>Key ideas</h2>
+    <ul>
+      <li><strong>Hazard vs. risk</strong> — a hazard is a potential source of harm; risk quantifies how likely and how severe.</li>
+      <li><strong>Hazard analysis techniques</strong> — PHA, FMECA, FTA (fault trees), HAZOP.</li>
+      <li><strong>SIL — Safety Integrity Levels</strong> — SIL 1 to SIL 4, target failure rates for safety functions (IEC 61508 and sector standards).</li>
+      <li><strong>Risk acceptance principles</strong> — ALARP, GAME, MEM; safety cases to demonstrate compliance.</li>
+      <li><strong>Safety ≠ reliability</strong> — a system can fail often but safely (fail-safe), or rarely but dangerously.</li>
+    </ul>
+
+    <h2>Practical example</h2>
+    <p>
+      A level-crossing barrier that fails <em>closed</em> stops traffic — poor
+      availability, but safe. One that fails <em>open</em> is a hazardous failure.
+      Safety design is about steering failures toward the safe state and making
+      dangerous failure modes extremely rare (SIL targets).
+    </p>
+
+    <h2>Going further</h2>
+    <ul>
+      <li>Related pages: <a href="reliability.html">Reliability</a>, <a href="availability.html">Availability</a></li>
+      <li>References: IEC 61508 (functional safety), EN 50126 / 50128 / 50129 (railway), ISO 26262 (automotive)</li>
+    </ul>
+  </main>
+
+  <footer class="site-footer">
+    © RAMSysz — RAMS engineering explained. Built for the
+    <a href="https://www.youtube.com/@RAMSysz" target="_blank" rel="noopener">RAMSysz YouTube channel</a>.
+  </footer>
+
+</body>
+</html>

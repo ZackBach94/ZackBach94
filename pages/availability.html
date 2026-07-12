@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Availability explained: uptime vs. downtime, inherent and operational availability, and the MTBF/MTTR relationship.">
+  <title>Availability — RAMSysz</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="inner">
+      <a class="brand" href="../index.html">RAM<span>Sysz</span></a>
+      <nav class="site-nav">
+        <a href="reliability.html">Reliability</a>
+        <a href="availability.html" aria-current="page">Availability</a>
+        <a href="maintainability.html">Maintainability</a>
+        <a href="safety.html">Safety</a>
+        <a href="https://www.youtube.com/@RAMSysz" target="_blank" rel="noopener">YouTube ▶</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Availability — the “A” in RAMS</h1>
+    <p>
+      Availability combines reliability and maintainability into one number:
+      <em>what fraction of the time is the system actually ready to do its job?</em>
+    </p>
+
+    <div class="video-wrap">
+      <p>🎬 Video coming soon — paste the YouTube <code>&lt;iframe&gt;</code> here</p>
+    </div>
+
+    <h2>Definition</h2>
+    <div class="callout">
+      <p>
+        <strong>Inherent availability:</strong>
+        <code>A = MTBF / (MTBF + MTTR)</code> —
+        uptime divided by total time, considering only corrective maintenance.
+      </p>
+    </div>
+
+    <h2>Key ideas</h2>
+    <ul>
+      <li><strong>Inherent availability (Ai)</strong> — design-level: only MTBF and MTTR, ideal support conditions.</li>
+      <li><strong>Achieved availability (Aa)</strong> — adds preventive maintenance downtime.</li>
+      <li><strong>Operational availability (Ao)</strong> — the real-world figure: includes logistics and administrative delays (spares, crew, access).</li>
+      <li><strong>Improving A</strong> — either fail less often (raise MTBF) or repair faster (lower MTTR): two levers, one target.</li>
+    </ul>
+
+    <h2>Practical example</h2>
+    <p>
+      A train door system has MTBF = 4 000 h and MTTR = 2 h:
+      A = 4000 / (4000 + 2) ≈ <strong>99.95 %</strong>.
+      That still means roughly 4.4 hours of downtime per year per door system —
+      multiplied across a fleet, availability targets drive real operating cost.
+    </p>
+
+    <h2>Going further</h2>
+    <ul>
+      <li>Related pages: <a href="reliability.html">Reliability</a>, <a href="maintainability.html">Maintainability</a></li>
+      <li>References: IEC 60050-192, EN 50126 (railway RAMS)</li>
+    </ul>
+  </main>
+
+  <footer class="site-footer">
+    © RAMSysz — RAMS engineering explained. Built for the
+    <a href="https://www.youtube.com/@RAMSysz" target="_blank" rel="noopener">RAMSysz YouTube channel</a>.
+  </footer>
+
+</body>
+</html>

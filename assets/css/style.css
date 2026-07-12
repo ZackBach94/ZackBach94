@@ -1,0 +1,172 @@
+/* RAMSysz — shared stylesheet */
+
+:root {
+  --bg: #f7f8fa;
+  --surface: #ffffff;
+  --text: #1c2430;
+  --muted: #5b6675;
+  --border: #e3e7ee;
+  --accent: #0e7490;      /* teal — brand color, change to match channel art */
+  --accent-soft: #e0f2f7;
+  --radius: 12px;
+  --maxw: 56rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #10151c;
+    --surface: #1a212b;
+    --text: #e8ecf1;
+    --muted: #9aa6b4;
+    --border: #2a3442;
+    --accent: #38bdf8;
+    --accent-soft: #12303f;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.65;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Header & navigation */
+.site-header {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+}
+
+.site-header .inner {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0.9rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.brand {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.brand span { color: var(--accent); }
+
+.site-nav a {
+  color: var(--muted);
+  text-decoration: none;
+  margin-left: 1rem;
+  font-size: 0.95rem;
+}
+
+.site-nav a:hover,
+.site-nav a[aria-current="page"] { color: var(--accent); }
+
+/* Layout */
+main {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 2rem 1.25rem 4rem;
+}
+
+.hero { text-align: center; padding: 2.5rem 0 1.5rem; }
+.hero h1 { font-size: 2.2rem; margin: 0 0 0.5rem; }
+.hero p { color: var(--muted); max-width: 40rem; margin: 0 auto; }
+
+h1, h2, h3 { line-height: 1.3; }
+h2 { margin-top: 2.2rem; }
+a { color: var(--accent); }
+
+/* Concept cards on the homepage */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.card .letter {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--accent);
+}
+
+.card h3 { margin: 0; }
+.card p { margin: 0; color: var(--muted); font-size: 0.95rem; flex: 1; }
+.card a { font-weight: 600; text-decoration: none; }
+
+/* Video embed placeholder */
+.video-wrap {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  background: var(--accent-soft);
+  border: 1px dashed var(--accent);
+  border-radius: var(--radius);
+  display: grid;
+  place-items: center;
+  color: var(--muted);
+  margin: 1.5rem 0;
+  overflow: hidden;
+}
+
+.video-wrap iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Key formula / definition callout */
+.callout {
+  background: var(--accent-soft);
+  border-left: 4px solid var(--accent);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  padding: 0.9rem 1.2rem;
+  margin: 1.5rem 0;
+}
+
+.callout code { font-size: 1.05rem; }
+
+/* Simple data tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  background: var(--surface);
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.55rem 0.8rem;
+  text-align: left;
+}
+
+th { background: var(--accent-soft); }
+
+/* Footer */
+.site-footer {
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 1.5rem 1.25rem;
+}
