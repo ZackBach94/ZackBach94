@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="RAMSysz — learn RAMS engineering: Reliability, Availability, Maintainability and Safety, explained simply.">
+  <title>RAMSysz — RAMS concepts explained</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="inner">
+      <a class="brand" href="index.html">RAM<span>Sysz</span></a>
+      <nav class="site-nav">
+        <a href="pages/reliability.html">Reliability</a>
+        <a href="pages/availability.html">Availability</a>
+        <a href="pages/maintainability.html">Maintainability</a>
+        <a href="pages/safety.html">Safety</a>
+        <!-- TODO: replace with your channel URL -->
+        <a href="https://www.youtube.com/@RAMSysz" target="_blank" rel="noopener">YouTube ▶</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>RAMS concepts, explained simply</h1>
+      <p>
+        Companion site of the <strong>RAMSysz</strong> YouTube channel.
+        Each page below goes with a video and digs into one pillar of RAMS
+        engineering — with definitions, formulas and practical examples.
+      </p>
+    </section>
+
+    <section class="card-grid">
+      <article class="card">
+        <div class="letter">R</div>
+        <h3>Reliability</h3>
+        <p>The probability that a system performs its required function, without failure, for a given time. MTBF, failure rate, the bathtub curve.</p>
+        <a href="pages/reliability.html">Read the page →</a>
+      </article>
+
+      <article class="card">
+        <div class="letter">A</div>
+        <h3>Availability</h3>
+        <p>The proportion of time a system is actually able to operate. Inherent vs. operational availability, uptime and downtime.</p>
+        <a href="pages/availability.html">Read the page →</a>
+      </article>
+
+      <article class="card">
+        <div class="letter">M</div>
+        <h3>Maintainability</h3>
+        <p>How quickly and easily a system can be restored after a failure. MTTR, maintenance strategies, design for maintenance.</p>
+        <a href="pages/maintainability.html">Read the page →</a>
+      </article>
+
+      <article class="card">
+        <div class="letter">S</div>
+        <h3>Safety</h3>
+        <p>Freedom from unacceptable risk. Hazard analysis, safety integrity levels, and standards such as EN 50126 and IEC 61508.</p>
+        <a href="pages/safety.html">Read the page →</a>
+      </article>
+    </section>
+
+    <!--
+      To add a new concept page (FMECA, RBD, FTA, LCC…):
+      copy one of the <article class="card"> blocks above and
+      create the matching page from pages/_template.html
+    -->
+  </main>
+
+  <footer class="site-footer">
+    © RAMSysz — RAMS engineering explained. Built for the
+    <a href="https://www.youtube.com/@RAMSysz" target="_blank" rel="noopener">RAMSysz YouTube channel</a>.
+  </footer>
+
+</body>
+</html>

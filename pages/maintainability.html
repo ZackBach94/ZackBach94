@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Maintainability explained: MTTR, corrective vs. preventive maintenance, and designing systems that are easy to repair.">
+  <title>Maintainability — RAMSysz</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="inner">
+      <a class="brand" href="../index.html">RAM<span>Sysz</span></a>
+      <nav class="site-nav">
+        <a href="reliability.html">Reliability</a>
+        <a href="availability.html">Availability</a>
+        <a href="maintainability.html" aria-current="page">Maintainability</a>
+        <a href="safety.html">Safety</a>
+        <a href="https://www.youtube.com/@RAMSysz" target="_blank" rel="noopener">YouTube ▶</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Maintainability — the “M” in RAMS</h1>
+    <p>
+      Failures will happen. Maintainability asks:
+      <em>when they do, how fast and how easily can we get back to normal operation?</em>
+    </p>
+
+    <div class="video-wrap">
+      <p>🎬 Video coming soon — paste the YouTube <code>&lt;iframe&gt;</code> here</p>
+    </div>
+
+    <h2>Definition</h2>
+    <div class="callout">
+      <p>
+        <strong>Maintainability</strong> is the probability that a failed item is
+        restored to operating condition within a given time, using stated procedures
+        and resources. Its headline metric is
+        <strong>MTTR</strong> — Mean Time To Repair.
+      </p>
+    </div>
+
+    <h2>Key ideas</h2>
+    <ul>
+      <li><strong>MTTR components</strong> — detect, diagnose, access, replace/repair, test, restart. Each step is a lever to shorten downtime.</li>
+      <li><strong>Maintenance strategies</strong> — corrective (run to failure), preventive (time/usage based), condition-based, predictive.</li>
+      <li><strong>Design for maintainability</strong> — accessibility, modularity, standard parts, built-in diagnostics, clear documentation.</li>
+      <li><strong>Link to availability</strong> — halving MTTR improves availability as surely as doubling MTBF, and is often cheaper.</li>
+    </ul>
+
+    <h2>Practical example</h2>
+    <p>
+      A traction converter fails rarely, but replacing it takes 12 h because it sits
+      behind three other assemblies. A redesign making it a slide-out module cuts MTTR
+      to 3 h — same reliability, four times less downtime per failure. That is a
+      maintainability gain, not a reliability one.
+    </p>
+
+    <h2>Going further</h2>
+    <ul>
+      <li>Related pages: <a href="availability.html">Availability</a>, <a href="reliability.html">Reliability</a></li>
+      <li>References: IEC 60706 (maintainability of equipment), EN 13306 (maintenance terminology)</li>
+    </ul>
+  </main>
+
+  <footer class="site-footer">
+    © RAMSysz — RAMS engineering explained. Built for the
+    <a href="https://www.youtube.com/@RAMSysz" target="_blank" rel="noopener">RAMSysz YouTube channel</a>.
+  </footer>
+
+</body>
+</html>
